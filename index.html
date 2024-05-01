@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="logo">
+        <img src="images/Logo.png" alt="Decor Logo" />
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#products">Products</a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div class="burger-icon"></div>
+        <div class="burger-icon"></div>
+        <div class="burger-icon"></div>
+      </div>
+      <div class="cart-icon" id="cart-icon">
+        <i class="cart"><a href="./cart.html">cart</a></i>
+      </div>
+    </nav>
+
+    <!-- Home section -->
+    <section class="home-section">
+      <div class="home-content">
+        <h1 class="logo">ENVIO Decor</h1>
+        <p>
+          From decorating the kitchen to DIYing a firepit, our design
+          inspiration and expert tips to home design and decorating can help you
+          make your best home.
+        </p>
+        <button class="shop-button">Shop</button>
+      </div>
+    </section>
+
+    <!-- Products section -->
+    <section class="container">
+      <h1>Featured Products</h1>
+      <div class="slider-wrapper product" id="product-list-container">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          ❮
+        </button>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          ❯
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <span class="popup-message" id="popup-message"></span>
+      <button class="close-btn" id="close-btn">Close</button>
+    </div>
+
+    <section class="latest-collection">
+      <h2>our latest collection</h2>
+      <div class="collection-container">
+        <div class="card one">
+          <img src="images/img-collection1.jpg" alt="Collection 1" />
+          <div class="info">
+            <h3>colorful collection</h3>
+            <p>Each piece is carefully painted the old-fashioned way</p>
+            <button>Shop Collection</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="right">
+            <img src="images/img-collection2.webp" alt="Collection 2" />
+            <div class="info">
+              <h3>simple collection</h3>
+              <p>Modern purity of form rendered in hardwood and brass</p>
+              <button>Shop Collection</button>
+            </div>
+          </div>
+          <div class="left">
+            <img src="images/img-collection3.jpg" alt="Collection 3" />
+            <div class="info">
+              <h3>Contemporary Design</h3>
+              <p>
+                Contemporary Interior Design ideas to make your home gorgeous!
+                We recognize that your home is the backdrop of your life.
+              </p>
+              <button>Shop Collection</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <div class="subscribe-content">
+        <h2>Get 25% Off Discount Coupons</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst
+          amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel
+          egestas.
+        </p>
+        <form class="subscribe-form" action="#" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address here"
+            required
+          />
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+    </section>
+
+    <h2 class="testimonial-title">some testimonials</h2>
+    <section class="testimonials-section">
+      <div class="testimonial">
+        <div class="quote">"</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus
+          at lorem facilisis scelerisque. Integer et purus quis ante bibendum
+          ullamcorper.
+        </p>
+        <h4>John Doe</h4>
+      </div>
+      <div class="testimonial">
+        <div class="quote">"</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus
+          at lorem facilisis scelerisque. Integer et purus quis ante bibendum
+          ullamcorper.
+        </p>
+        <h4>Jane Smith</h4>
+      </div>
+      <div class="testimonial">
+        <div class="quote">"</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lectus
+          at lorem facilisis scelerisque. Integer et purus quis ante bibendum
+          ullamcorper.
+        </p>
+        <h4>David Johnson</h4>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner-content">
+        <img src="images/benner-img.jpg" alt="Banner Image" />
+        <div class="info-banner">
+          <h2>Section Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+            lectus at lorem facilisis scelerisque. Integer et purus quis ante
+            bibendum ullamcorper.
+          </p>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-menu-list">
+        <div class="footer-menu">
+          <h3>Ultras</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Ultras Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Delivery Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <a href="#"
+                >Do you have any questions or suggestions?
+                <span>ourservices@ultras.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                >Do you need assistance? Give us a call.
+                <span>+57 444 11 00 35</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h3>Forever 2024</h3>
+          <ul>
+            <li>
+              Cras mattis sit ornare in metus eu amet adipiscing enim.
+              Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo
+              dignissim lacus, lacus sagittis dictumst.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-section">
+        <p>
+          &copy; 2024 <span>ENVIO Decor</span> All Rights Reserved. this website
+          was created by
+          <span><a href="">W.H</a></span
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script></script>
+  </body>
+</html>

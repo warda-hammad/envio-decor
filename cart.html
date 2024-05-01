@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cart page</title>
+  </head>
+  <body>
+    <div class="cart">
+      <h1 class="cart-title">your cart</h1>
+      <div id="cart-items-container" class="cart-items-container"></div>
+
+      <div class="total">
+        <!-- Total price -->
+        <div class="total-price" id="totalPrice"></div>
+
+        <!-- Checkout button -->
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+      // Retrieve cart data from localStorage
+      var cartData = JSON.parse(localStorage.getItem("cart"));
+      // Call displayCart function with the retrieved cart data
+      displayCart(cartData);
+    </script>
+  </body>
+</html>
